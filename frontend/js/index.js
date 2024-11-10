@@ -106,7 +106,7 @@ async function postHandler(){
 
         if (response.ok) {
             console.log("Successful")
-            window.location.href = "/frontend/index.html";
+            window.location.href = "/";
         } else {
             console.log("Post request unsuccessful")
         }
@@ -133,7 +133,7 @@ async function deleteItem(id){
         const ItemToBeDeleted = await fetch(deleteUrl, option);
 
         //window.reload();
-        window.location.href = "/frontend/index.html";
+        window.location.href = "/";
 
         if (ItemToBeDeleted.ok){
             console.log("Item is deleted")
