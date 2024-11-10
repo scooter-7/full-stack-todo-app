@@ -85,6 +85,7 @@ addButton.addEventListener("click", function() {
         postHandler()
     } else {
         updateItem(newItem)
+        window.location.href = "/";
     }
 })
 
@@ -167,7 +168,7 @@ async function updateItem(itemToUpdate) {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                text: todo
+                text: todo,
             })
         }
 
